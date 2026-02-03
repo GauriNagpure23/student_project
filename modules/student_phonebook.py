@@ -166,6 +166,8 @@ def menu():
         elif choice == "3":
             delete_student()
         elif choice == "4":
+            return
+        elif choice == "5":
             break
         else:
             print("Invalid choice")
