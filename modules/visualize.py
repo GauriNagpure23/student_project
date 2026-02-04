@@ -54,3 +54,6 @@ def plot_graphs():
     plt.close()
 
     print("✅ All graphs saved in graphs/ folder")
+
+
+# print
