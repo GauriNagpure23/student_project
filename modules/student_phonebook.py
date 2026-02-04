@@ -1,9 +1,7 @@
 import os
 import csv
 
-# -------------------------------
-# Paths
-# -------------------------------
+
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 FILE_PATH = os.path.join(DATA_FOLDER, "phonebook.csv")
@@ -11,9 +9,7 @@ FILE_PATH = os.path.join(DATA_FOLDER, "phonebook.csv")
 os.makedirs(DATA_FOLDER, exist_ok=True)
 
 
-# -------------------------------
-# Create default dirty dataset (50 records)
-# -------------------------------
+
 def create_default_file():
     if os.path.exists(FILE_PATH) and os.path.getsize(FILE_PATH) > 0:
         return  # don't overwrite existing data
@@ -111,9 +107,7 @@ def add_student():
     print("✅ Student added")
 
 
-# -------------------------------
-# Read all students
-# -------------------------------
+
 def read_students():
     if not os.path.exists(FILE_PATH):
         print("❌ File not found")
@@ -126,9 +120,7 @@ def read_students():
             print(row)
 
 
-# -------------------------------
-# Delete student by Name
-# -------------------------------
+
 def delete_student():
     if not os.path.exists(FILE_PATH):
         print("❌ File not found")
@@ -172,8 +164,6 @@ def menu():
             print("Invalid choice")
 
 
-# -------------------------------
-# Run standalone
-# -------------------------------
+
 if __name__ == "__main__":
     menu()
