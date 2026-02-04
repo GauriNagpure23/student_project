@@ -140,9 +140,7 @@ def delete_student():
     print(f"❌ Student '{name_to_delete}' deleted if existed")
 
 
-# -------------------------------
-# Menu for standalone run
-# -------------------------------
+
 def menu():
     create_default_file()
     while True:
